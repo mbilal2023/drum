@@ -9,224 +9,227 @@ const styles = StyleSheet.create({
   },
   backgroundImage: {
     flex: 1,
-    minHeight: height,
     width: '100%',
+    height: height,
+    justifyContent: 'flex-end',
   },
   editProfileButton: {
     position: 'absolute',
-    top: 50,
-    right: 20,
+    top: 40,
+    right: 15,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 123, 255, 0.8)',
-    paddingHorizontal: 12,
-    paddingVertical: 8,
-    borderRadius: 20,
+    backgroundColor: 'rgba(0, 123, 255, 0.9)',
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 15,
     zIndex: 10,
   },
   editIcon: {
-    width: 16,
-    height: 16,
-    marginRight: 5,
+    width: 12,
+    height: 12,
+    marginRight: 4,
     tintColor: '#fff',
   },
   editProfileText: {
     color: '#fff',
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: '600',
   },
-  profileSection: {
-    marginTop: 80,
-    paddingHorizontal: 20,
-    alignItems: 'center',
+  
+  // Bottom section that contains everything
+  bottomSection: {
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    paddingTop: 15,
+    paddingBottom: 10,
+    paddingHorizontal: 15,
   },
-  avatarContainer: {
+  
+  // Small profile section
+  smallProfileContainer: {
     position: 'relative',
-    alignItems: 'center',
-    marginBottom: 15,
-  },
-  vipFrame: {
-    position: 'absolute',
-    width: 120,
-    height: 120,
-    zIndex: 2,
-  },
-  avatar: {
-    width: 80,
-    height: 80,
-    borderRadius: 40,
-    borderWidth: 3,
-    borderColor: '#FFD700',
-    zIndex: 1,
-  },
-  userInfo: {
-    alignItems: 'center',
-    marginBottom: 20,
-  },
-  userName: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    color: '#fff',
-    marginBottom: 5,
-    textShadowColor: 'rgba(0, 0, 0, 0.8)',
-    textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 3,
-  },
-  userIdContainer: {
-    flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 8,
   },
-  userId: {
-    fontSize: 14,
+  smallVipFrame: {
+    position: 'absolute',
+    width: 60,
+    height: 60,
+    zIndex: 2,
+  },
+  smallAvatar: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    borderWidth: 2,
+    borderColor: '#FFD700',
+    zIndex: 1,
+  },
+  
+  // Small user info
+  smallUserInfo: {
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  smallUserName: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginBottom: 3,
+    textShadowColor: 'rgba(0, 0, 0, 0.8)',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 2,
+  },
+  smallUserIdContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  smallUserId: {
+    fontSize: 11,
     color: '#FFD700',
-    marginRight: 10,
+    marginRight: 8,
     fontWeight: '600',
   },
-  levelBadge: {
-    width: 30,
-    height: 20,
+  smallLevelBadge: {
+    width: 20,
+    height: 15,
   },
-  userBadge: {
-    fontSize: 12,
+  smallUserBadge: {
+    fontSize: 9,
     color: '#FFA500',
     textAlign: 'center',
-    marginBottom: 5,
+    marginBottom: 3,
     fontWeight: '500',
   },
-  userBio: {
-    fontSize: 12,
+  smallUserBio: {
+    fontSize: 9,
     color: '#CCCCCC',
     textAlign: 'center',
     fontWeight: '400',
   },
-  statsContainer: {
+  
+  // Compact stats section
+  compactStatsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    marginHorizontal: 20,
-    paddingVertical: 15,
-    borderRadius: 10,
-    marginBottom: 20,
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    paddingVertical: 8,
+    borderRadius: 8,
+    marginBottom: 8,
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.2)',
   },
-  statItem: {
+  compactStatItem: {
     alignItems: 'center',
     flex: 1,
   },
-  statLabel: {
-    fontSize: 14,
+  compactStatLabel: {
+    fontSize: 10,
     color: '#fff',
     fontWeight: '600',
-    marginBottom: 5,
+    marginBottom: 2,
   },
-  statValue: {
-    fontSize: 18,
+  compactStatValue: {
+    fontSize: 14,
     color: '#FFD700',
     fontWeight: 'bold',
   },
-  currencyContainer: {
+  
+  // Compact currency section
+  compactCurrencyContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    marginBottom: 20,
+    marginBottom: 8,
   },
-  currencyItem: {
+  compactCurrencyItem: {
     flex: 1,
     backgroundColor: 'rgba(0, 123, 255, 0.8)',
-    marginHorizontal: 5,
-    paddingVertical: 15,
-    paddingHorizontal: 10,
-    borderRadius: 10,
+    marginHorizontal: 2,
+    paddingVertical: 8,
+    paddingHorizontal: 6,
+    borderRadius: 8,
     alignItems: 'center',
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.3)',
   },
-  currencyIcon: {
-    width: 24,
-    height: 24,
-    marginBottom: 8,
+  compactCurrencyIcon: {
+    width: 16,
+    height: 16,
+    marginBottom: 4,
     tintColor: '#fff',
   },
-  currencyLabel: {
-    fontSize: 10,
+  compactCurrencyLabel: {
+    fontSize: 8,
     color: '#fff',
     textAlign: 'center',
     fontWeight: '600',
-    marginBottom: 3,
+    marginBottom: 2,
   },
-  currencyValue: {
-    fontSize: 14,
+  compactCurrencyValue: {
+    fontSize: 10,
     color: '#FFD700',
     fontWeight: 'bold',
   },
-  navigationContainer: {
+  
+  // Compact navigation section
+  compactNavigationContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     backgroundColor: 'rgba(0, 123, 255, 0.9)',
-    marginHorizontal: 20,
-    paddingVertical: 15,
-    borderRadius: 25,
-    marginBottom: 20,
+    paddingVertical: 8,
+    borderRadius: 20,
+    marginBottom: 8,
     borderWidth: 2,
     borderColor: 'rgba(255, 255, 255, 0.3)',
   },
-  navButton: {
+  compactNavButton: {
     alignItems: 'center',
     flex: 1,
   },
-  navIcon: {
-    width: 30,
-    height: 30,
-    marginBottom: 5,
+  compactNavIcon: {
+    width: 20,
+    height: 20,
+    marginBottom: 2,
     tintColor: '#fff',
   },
-  navLabel: {
-    fontSize: 12,
+  compactNavLabel: {
+    fontSize: 9,
     color: '#fff',
     fontWeight: '600',
   },
-  menuContainer: {
-    paddingHorizontal: 20,
-    paddingBottom: 30,
+  
+  // Compact menu section
+  compactMenuContainer: {
+    paddingBottom: 5,
   },
-  menuItem: {
+  compactMenuItem: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: 'rgba(30, 30, 60, 0.9)',
-    paddingVertical: 15,
-    paddingHorizontal: 20,
-    marginBottom: 2,
-    borderRadius: 8,
-    borderLeftWidth: 4,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    marginBottom: 1,
+    borderRadius: 6,
+    borderLeftWidth: 3,
     borderLeftColor: '#007BFF',
   },
-  menuIcon: {
-    width: 24,
-    height: 24,
-    marginRight: 15,
+  compactMenuIcon: {
+    width: 16,
+    height: 16,
+    marginRight: 10,
     tintColor: '#fff',
   },
-  menuLabel: {
+  compactMenuLabel: {
     flex: 1,
-    fontSize: 16,
+    fontSize: 12,
     color: '#fff',
     fontWeight: '500',
   },
-  arrowIcon: {
-    width: 16,
-    height: 16,
+  compactArrowIcon: {
+    width: 12,
+    height: 12,
     tintColor: '#007BFF',
-  },
-  // Gradient overlay styles (you can use react-native-linear-gradient for better gradients)
-  gradientOverlay: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
   },
 });
 
